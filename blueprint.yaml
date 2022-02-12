@@ -75,9 +75,9 @@ node_templates:
         backend:
             name: s3
             options:
-                bucket: terraform-state2100949
+                bucket: terraform-state210094
                 key: tfstate.file
-                region: { get_input: aws_region_name }            
+                region: { get_input: aws_region_name }
         environment_variables:
             AWS_ACCESS_KEY_ID: { get_secret: aws_access_key_id }
             AWS_SECRET_ACCESS_KEY: { get_secret: aws_secret_access_key }
